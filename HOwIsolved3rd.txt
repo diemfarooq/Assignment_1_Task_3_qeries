@@ -1,0 +1,17 @@
+Steps to solve 3rd are:
+
+we will use join command of linux to perform inner join on both the tables
+	annotation.tab
+	expression.tab
+
+the query will be
+SELECT * FROM annotation, expression
+Where annotation.gene=expression.gene
+
+the JOIN command of linux join files based on a field by default 1st field 
+we have "gene" as the first field of annotation table as well as expression table
+
+open terminal type in 
+$ join annotation.tab expression.tab > join.tab
+
+you will get the out put
