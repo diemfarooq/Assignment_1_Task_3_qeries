@@ -1,0 +1,12 @@
+Open Terminal
+
+make sure the sql server is up and running
+
+$ systemctl status mysqld
+
+once its active proceed
+
+$ mysql -u root compbiol -e "SELECT * FROM Annotation" > annotation.tab
+
+this creates a file annotation.tab which contains data from annotation table TAB delimited
+
