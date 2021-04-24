@@ -1,0 +1,17 @@
+The query to be run on database is 
+SELECT * FROM expressionn;
+
+The database is compbiol
+and table is expression
+
+Open the terminal
+Make sure sql server is running by typing at terminal
+$ systemctl status mysqld
+
+if it's active then proceed
+we are the root user 
+
+$ mysql -u root compbiol -e "SELECT * FROM expression" > expression.tab
+
+this makes a file expression.tab with the data of expression table
+which are TAB delimited
